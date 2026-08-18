@@ -1,0 +1,50 @@
+{
+  "name": "Airbnb Number Checker API",
+  "brand": "NumberChecker",
+  "repository": "numberchecker-ai/airbnb-checker-api",
+  "description": "Asynchronous bulk Airbnb verification API for NumberChecker.",
+  "official_site": "https://numberchecker.ai",
+  "landing_page": "https://numberchecker.ai/products/airbnb-checker",
+  "canonical_docs": "https://docs.numberchecker.ai/airbnb-checker",
+  "base_url": "https://api.numberchecker.ai",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "async",
+  "endpoints": {
+    "create_task": {
+      "method": "POST",
+      "path": "/v1/tasks"
+    },
+    "get_task": {
+      "method": "POST",
+      "path": "/v1/gettasks"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "input": {
+    "format": "text",
+    "one_per_line": true,
+    "input_kind": "phone"
+  },
+  "products": [
+    {
+      "type": "airbnb",
+      "name": "Number Checker",
+      "min": 1000,
+      "max": 100000,
+      "fields": [
+        "number",
+        "activated"
+      ]
+    }
+  ],
+  "pricing_url": "https://numberchecker.ai/pricing",
+  "maintainer": "NumberChecker",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}
